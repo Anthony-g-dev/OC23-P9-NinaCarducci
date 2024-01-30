@@ -42,6 +42,10 @@ body {
 	width: 20px;
 }
 
+.carousel-image {
+	height: auto;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -69,7 +73,7 @@ body {
 
 .picture img {
 	width: 100%;
-
+	height: auto;
 }
 #about-me {
 	flex: 2
@@ -88,10 +92,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
 }
 .title{
 	text-align: center;

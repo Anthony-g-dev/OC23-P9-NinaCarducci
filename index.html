@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="top-header">
-      <h3 class="name">Nina Carducci</h3>
+      <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -24,7 +24,7 @@
           <li><a href="#services">Service</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+            <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" title="Instagram" target="_blank" aria-label="Visitez mon Instagram">
 				      <img src="assets/images/instagram.webp" width="20px" height="20px" alt="Logo instagram"/>
 			      </a>
           </li>
@@ -32,12 +32,12 @@
       </div>
     </header>
     <main>
-      <section id="header">
+      <section id="header" role="region" aria-label="En-tête du site">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -50,31 +50,31 @@
               <img src="./assets/images/slider/slider_3.avif" width="1920px" height="888px" class="d-block w-100 carousel-image" alt="Deux mariés s'embrassant au centre de l'attention, entourés d'invités"/>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Image précédente">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Image suivante">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
-      <section id="about">
+      <section id="about" role="region" aria-label="Section à propos de moi">
         <div class="picture left">
           <img src="./assets/images/nina.webp" width="560px" height="558px" alt="Portrait de Nina Carducci" />
         </div>
         <div id="about-me">
-          <h3 class="about-me__title">A propos de moi</h3>
-          <h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+          <h1 class="about-me__title">A propos de moi</h1>
+          <h2 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h2>
           <p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
         </div>
       </section>
-      <section id="gallery">
-        <h3 class="title">Portfolio</h3>
+      <section id="gallery" role="region" aria-label="Portfolio de mes œuvres">
+        <h1 class="title">Portfolio</h1>
         <div class="container py-3">
           <div class="gallery" style="display: none">
-            <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concerts_1.avif" width="424px" height="424px" alt="Concert regrouppant une foule de personnes levant les mains. La scène est éclairée par des lumières rouges intenses" />
+            <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concerts_1.avif" width="424px" height="424px" alt="Concert regrouppant une foule de personnes levant les mains." />
             <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise_1.avif" width="424px" height="424px" alt="Une personne portant un costume foncé avec une chemise blanche et une cravate rouge" />
             <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise_2.avif" width="424px" height="424px" alt="Deux personnes assises, le sourire aux lèvres dans un espace de bureau lumineux et coloré" />
             <img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mariage_1.avif" width="424px" height="424px" alt="Deux mains tendus l'une vers l'autre, sur fond flou naturel" />
@@ -82,68 +82,66 @@
             <img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mariage_2.avif" width="424px" height="424px" alt="Deux mariés se tenant par la main, sur fond de palmier et de ciel" />
             <img loading="lazy" data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portraits_2.avif" width="424px" height="424px" alt="Une femme derrière une clôture métallique, portant un haut noir et un jean clair" />
             <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concerts_2.avif" width="424px" height="424px" alt="Chanteur sur scène avec de la fumée coloré en fond" />
-            <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise_3.avif" width="424px" height="424px" alt="Une femme assise à un bureau, riant et travaillant sur un ordinateur portable" />
+            <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/entreprise_3.avif" width="424px" height="424px" alt="Une femme assise, riant et travaillant sur un ordinateur portable" />
           </div>
         </div>
         <div class="quote">
           <figure>
             <blockquote>
-              <h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+              <h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
             </blockquote>
             <figcaption class="quote__author">- Richard Avedon</figcaption>
           </figure>
         </div>
       </section>
-      <section id="services">
-        <h3 class="title">Mes services</h3>
+      <section id="services" role="region" aria-label="Section de présentation de mes services de photographie">
+        <h1 class="title">Mes services</h1>
         <div class="container">
           <article class="service">
             <div class="service__description">
-              <h3>Shooting photo</h3>
+              <h2>Shooting photo</h2>
               <p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
             </div>
             <div class="service__price">
-              <h4>350€/demi journée</h4>
+              <h3>350€/demi journée</h3>
               <span>Matériel, déplacement inclus</span>
             </div>
           </article>
           <article class="service">
             <div class="service__description">
-              <h3>Retouches</h3>
+              <h2>Retouches</h2>
               <p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
             </div>
             <div class="service__price">
-              <h4>50€/photo</h4>
+              <h3>50€/photo</h3>
               <span>2 AR par photo</span>
             </div>
           </article>
           <article class="service">
             <div class="service__description">
-              <h3>Album photos</h3>
+              <h2>Album photos</h2>
               <p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
             </div>
             <div class="service__price">
-              <h4>400€ album A4</h4>
+              <h3>400€ album A4</h3>
               <span>30 pages recto/verso</span>
             </div>
           </article>
         </div>
       </section>
-      <section class="quote">
+      <section class="quote" role="region" aria-label="Citation inspirante">
         <figure>
           <blockquote>
-            <h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une
-              expression, des traits ou une nostalgie capable de résumer ou plus
-              exactement de révéler une vie</h1>
+            <h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </section>
     </main>
-    <footer id="contact">
+    <footer id="contact" role="region" aria-label="Section de contact">
       <div class="container">
         <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
+          <h1>Une question ? Une demande de devis ?</h1>
           <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
           <form action="" method="post">
             <label for="nom">Nom</label>

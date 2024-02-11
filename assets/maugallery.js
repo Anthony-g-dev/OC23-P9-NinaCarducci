@@ -49,23 +49,20 @@ function mauGallery(selector, options) {
   }
 
   function wrapItemInColumn(element, columns) {
-    var columnClasses = "";
-    if (typeof columns === "number") {
+    var columnClasses = '';
+    if (typeof columns === 'number') {
       columnClasses = `col-${Math.ceil(12 / columns)}`;
-    } else if (typeof columns === "object") {
-      columnClasses = Object.keys(columns)
-        .map(function (key) {
-          return `col-${key}-${Math.ceil(12 / columns[key])}`;
-        })
-        .join(" ");
+    } else if (typeof columns === 'object') {
+      columnClasses = Object.keys(columns).map(function(key) {
+        return `col-${key}-${Math.ceil(12 / columns[key])}`;
+      }).join(' ');
     } else {
-      console.error(
-        `Columns should be defined as numbers or objects. ${typeof columns} is not supported.`
-      );
+      console.error(`Columns should be defined as numbers or objects. ${typeof columns} is not supported.`);
       return;
     }
-    var columnWrapper = document.createElement("div");
-    columnWrapper.classList.add("item-column", "mb-4", columnClasses);
+    var columnWrapper = document.createElement('div');
+    columnWrapper.classList.add('item-column', 'mb-4');
+    columnWrapper.classList.add(...columnClasses.split(' ')); // Utiliser le spread operator pour ajouter les classes individuellement
     element.parentNode.insertBefore(columnWrapper, element);
     columnWrapper.appendChild(element);
   }
